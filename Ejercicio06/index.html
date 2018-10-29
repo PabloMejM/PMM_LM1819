@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formularios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form action="gestiondatos.jsp" method="POST">
+        <fieldset>
+            <legend>Datos usuario</legend>
+        <label for="nombre">Nombre de Usuario:</label><input type="text" value="" name="nombre" id="nombre" placeholder="Nombre de usuario" size="100" maxlength="20" pattern="[A-Z]{5}[0-9]{3}">
+        <br>
+        <input type="password" name="pass">
+        <br>
+         <label for="pregunta">Alumno? (Selecciona Sí si no y No si sí) </label>
+        <input type="radio" name="pregunta" value="Si" checked="checked" id="pregunta">No
+        <input type="radio" name="pregunta" value="No">Sí
+        <br>
+        Aficiones
+        <input type="checkbox" name="futbol" value="f">Fútbol
+        <input type="checkbox" name="cine" value="c">Cine
+        <br>
+        <label for="provincias" id="provincias">Provincias</label>
+        <select name="provincias" id="provincias">
+            <optgroup label="Unos">
+                <option value="SE">Sevilla</option> 
+            </optgroup>
+            <optgroup label="Dos">
+                <option value="CA">Cádiz</option>
+                <option value="HU">Huelva</option>
+            </optgroup>
+        </select>
+        <br>
+        <input type="file" name="archivo">
+        <br>
+        <textarea name="descripcion" rows="10" cols="50"></textarea>
+        <br>
+        <input type="button" name="boton" value="Pulsar"/> 
+        <br>
+        <input type="reset" value="borrar">
+        <br>
+        <input type="submit" value="Enviar">
+    </fieldset>
+
+
+
+    </form>
+
+    <form>
+        <input type="number" min="1" max="10" required="required">
+        <input type="email">
+        <input type="url">
+        <input type="submit">
+        <input type="date">
+        <input type="time">
+        <input type="datetime-local">
+        <input type="month">
+        <input type="search">
+        <input type="tel">
+        <input type="range" min="1" max="23462675467" step="23452345">
+        <input type="color">
+    </form>
+</body>
+</html>
