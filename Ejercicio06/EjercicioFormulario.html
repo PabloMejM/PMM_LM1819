@@ -10,64 +10,135 @@
     <form action="gestiondatos.jsp" method="GET"></form>
     <fieldset>
         <legend>Datos usuario</legend>
-    <label for="nombre">Nombre:</label><input type="text" value="" name="nombre" id="nombre"  required="required" autofocus="autofocus">
-    <br><br>
-    <label for="email">Email:</label> <input type="email" value="" name="email" id="email"> 
-    <br><br>
-    <label for="URL">URL:</label> <input type="url" placeholder="Escribe la URL de tu página web">
-    <br><br>
-    <label for="Fecha">Fecha:</label> <input type="date">
-    <br><br>
-    <label for="Tiempo">Tiempo:</label> <input type="time">
-    <br><br>
-    <label for="Tiempo y hora">Fecha y hora:</label> <input type="datetime-local">
-    <br><br>
-    <label for="Mes">Mes</label> <input type="month">
-    <br><br>
-    <label for="Semana">Semana:</label> <input type="week">
-    <br><br>
-    <label for="Número">Número (min -10, max 10):</label> <input type="number" min="-10" max="10">
-    <br><br>
-    <label for="Teléfono">Teléfono:</label> <input type="tel">
-    <br><br>
-    <label for="Búsqueda">Término de búsqueda:</label><input type="search">
-    <br><br>
-    <label for="Color">Color favorito:</label> <input type="color">
-    <input type="submit" value="Enviar"> </fieldset>
+    <table>
+    <tr>
+    <td><label for="nombre">Nombre:</label></td>
+    <td><input type="text" value="" name="nombre" id="nombre"  required="required" autofocus="autofocus"></td>
+    </tr>
+    <tr>
+    <td><label for="email">Email:</label></td> 
+    <td><input type="email" value="" name="email" id="email"></td> 
+    </tr>
+    <tr>
+    <td><label for="URL">URL:</label></td> 
+    <td><input type="url" value="" name="url" id="url" placeholder="Escribe la URL de tu página web"></td>
+    </tr>
+    <tr>
+    <td><label for="Fecha">Fecha:</label> </td>
+    <td><input type="date" value="" name="date" id="date"></td>
+    </tr>
+    <tr>
+    <td><label for="Tiempo">Tiempo:</label> </td>
+    <td><input type="time" value="" name="time" id="time"></td>
+    </tr>
+    <tr>
+    <td><label for="Tiempo y hora">Fecha y hora:</label></td> 
+    <td><input type="datetime-local" value="" name="tiempohora" id="tiempohora "></td>
+    </tr>
+    <tr>
+    <td><label for="Mes">Mes</label></td> 
+    <td><input type="month" value="" name="mes" id="mes"></td>
+    </tr>
+    <tr>
+    <td><label for="Semana">Semana:</label> </td>
+    <td><input type="week" value="" name="semana" id="semana"></td>
+    </tr>
+    <tr>
+    <td><label for="Número">Número (min -10, max 10):</label> </td>
+    <td><input type="number" value="" name="número" id="número" min="-10" max="10"></td>
+    </tr>
+    <tr>
+    <td><label for="Teléfono">Teléfono:</label> </td>
+    <td><input type="tel" value="" name="tel" id="tel"></td>
+    </tr>
+    <tr>
+    <td><label for="Búsqueda">Término de búsqueda:</label></td>
+    <td><input type="search" value="" name="buscar" id="buscar"></td>
+    </tr>
+    <tr>
+    <td><label for="Color">Color favorito:</label> </td>
+    <td><input type="color" value="" name="color" id="color"></td>
+    </tr>
+   
+    <td></td>
+    <td><input type="submit" value="Enviar"> </td>
+    </table></fieldset>
     <br><br><br><br><br><br><br>
 
     <form>
-        <input type="number" min="0" max="10">
-        <br><br>
-        <input type="email">
-        <br><br>
-        <input type="url">
-        <br><br>
-        <input type="submit">
-        <br><br>
-        <input type="date">
-        <br><br>
-        <input type="time">
-        <br><br>
-        <input type="datetime-local">
-        <br><br>
-        <input type="month">
-        <br><br>
-        <input type="search">
-        <br><br>
-        <input type="tel">
-        <br><br>
-        <input type="range" min="1" max="23462675467" step="23452345">
-        <br><br>
-        <input type="color">
-        <input list="provincias">
-            <datalist id="provincias">
-                <option value="Sevilla">
-                <option value="Jaén">
-                <option value="Almeria">
-                <option value="Cádiz">
-                <option value="Málaga">
-            </datalist>
+        <table>
+            <tr>
+                <td><label for="Número">Número (min 0, max 10): </td>
+                <td><input type="number" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td> <input type="email"></td>
+            </tr>
+            <tr>
+                <td><label for="URL">URL:</label></td>
+                <td> <input type="url"></td>
+            </tr>
+            <tr>
+                <td><label for="Fecha">Fecha:</label> </td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label for="Tiempo">Tiempo:</label> </td>
+                <td><input type="time"></td>
+            </tr>
+            <tr>
+                <td><label for="Tiempo y hora">Fecha y hora:</label></td> 
+                <td><input type="datetime-local"></td>
+            </tr>
+            <tr>
+                <td><label for="Mes">Mes</label></td> 
+                <td><input type="month"></td>
+            </tr>
+            <tr>
+                <td><label for="Búsqueda">Término de búsqueda:</label></td>
+                <td><input type="search"></td>
+            </tr>
+            <tr>
+                <td><label for="Teléfono">Teléfono:</label> </td>
+                <td><input type="tel"></td>
+            </tr>
+            <tr>
+                <td><label for="Rango">Rango:</label></td>
+                <td><input type="range" min="1" max="23462675467" step="23452345"></td>
+            </tr>
+            <tr>
+                <td><label for="Color">Color favorito:</label> </td>
+                <td><input type="color"></td>
+            </tr>
+            <tr>
+                <td><label for="Provincias">Provincias</label></td>
+                <td> <input list="provincias">
+                    <datalist id="provincias">
+                        <option value="Sevilla">
+                        <option value="Jaén">
+                        <option value="Almeria">
+                        <option value="Cádiz">
+                        <option value="Málaga">
+                    </datalist></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+            <tr>
+                <td><label for="texto">Caja de texto</label></td>
+                <td><input type="text" required="required" autofocus="autofocus" placeholder="Escriba aqui" autocomplete="hola"></td>
+            </tr>
+            <tr>
+                <td><label for="Archivo">Suba un archivo</label></td>
+                <td><input type="file" multiple></td>
+            </tr>
+            <tr>
+                <td><label for="Contraseña">Contraseña</label></td>
+                <td><input type="password" minlength="8" pattern="[0-9]{1}[A-Z]{1}"></td>
+            </tr>
+
+        </table>
     </form>
 </body>
 </html>
