@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Selectores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    p, span, h1 {
+        font-weight: bold;
+    }
+    div#primera {
+        background: blue;
+    }
+    div#primera p {
+        font-style: italic;
+    }
+    .bloque:hover {
+        font-size: 40px;
+    }
+    .bloque::first-letter {
+        font-size: 30px;
+    }
+    a[href$="com"] {
+        text-decoration: none;
+    }
+    div#segunda a{
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <div id="primera">
+        <p>Navegador Predeterminado</p>
+        <p class="bloque">Sin navegador</p>
+        <p>Navegador 2</p>
+        <p>Navegador 3</p>
+    </div>
+    <span>Hola buenas tardes</span>
+    <h1>hola</h1>
+    <p>hola</p>
+    <div id="segunda">
+        <p>holaaaaa</p> 
+        <a href="#">sdfsdf</a>
+        <a href="https://www.seguro.es">Seguro</a>
+        <a href="presentacion.pdf">PRESENTACION</a>
+        <a href="https://www.google.com">Google</a>
+    </div>
+</body>
+</html>
